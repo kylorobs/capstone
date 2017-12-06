@@ -1,0 +1,99 @@
+/* UNIVERSAL STYLES */
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+.img-container {
+height: auto;
+}
+
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/* NAV */
+
+.menu {
+  background-color: white;
+  padding: 2rem 0;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+align-items: center;
+flex-grow: 1;
+}
+
+
+.logo-container {
+  height: 2rem;
+  width: 2rem;
+}
+
+.logo-container img {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+nav {
+  align-self: center;
+}
+
+nav li {
+  display: inline;
+  padding-left: 2rem;
+}
+
+/* BANNER */
+
+.banner {
+  background-color: gray;
+}
+
+.banner-media {
+  width: 60%;
+  overflow: hidden;
+  padding: 2rem 0rem;
+}
+
+.hero {
+  margin-left: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.hero-text {
+  padding-bottom: 2rem;
+}
+
+.button {
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
