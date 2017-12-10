@@ -1,6 +1,43 @@
 /* UNIVERSAL STYLES */
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v14/tI4j516nok_GrVf4dhunkg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 html {
   font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -25,6 +62,11 @@ img {
   display: flex;
 }
 
+h1, h2, h3, span.quote-name, .post-heading {
+  font-family: Lato;
+  font-weight: 900;
+  color: #565454;
+}
 h2 {
   font-size: 3rem;
   margin: 2rem 0;
@@ -83,10 +125,14 @@ ul li {
   padding-left: 1rem;
 }
 
+ul li:hover {
+  color: #D264FD;
+}
+
 /* BANNER */
 
 .banner {
-  background-color: gray;
+  background-color: #fcffc1;
 }
 
 .banner-media {
@@ -113,10 +159,11 @@ ul li {
 
 .button {
   padding: 0.7rem;
-  background-color: black;
+  background-color: #D264FD;
   color: white;
   text-align: center;
   text-decoration: none;
+  border-radius: 2rem;
 }
 
 /* INFORMATION */
@@ -145,8 +192,8 @@ span.quote-name {
 
 .post {
     align-items: center;
-    border-left: 1px solid gray;
-    border-bottom:1px solid gray;
+    border-left: 2px solid #fcffc1;
+
 }
 
 .thumbnail {
@@ -168,7 +215,7 @@ span.quote-name {
 
 .post-heading {
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .post a {
@@ -179,7 +226,7 @@ span.quote-name {
 
 .learning {
   padding: 2rem 3.5rem;
-  background-color: gray;
+  background-color: #EEc4FF;
 }
 
 .learning h3 {
@@ -224,6 +271,10 @@ span.quote-name {
   height: 10rem;
 }
 
+.course-description:hover {
+  background-color:#fcffc1;
+}
+
 .course-description p {
   margin: 0;
   padding: 0.5rem 0;
@@ -253,10 +304,17 @@ video {
 .footer {
   justify-content: space-between;
   align-items: center;
+  background-color: #fcffc1;
 }
 
 .container.footer.flex {
   padding-top: 1rem;
   padding-bottom: 3rem;
-  border-top:0.3px solid gray;
+  border-top:1px solid #fcffc1;
+  font-size: 0.8rem;
+}
+
+
+.container.footer.flex span, .termsandprivacy ul li {
+  opacity: 0.7;
 }
