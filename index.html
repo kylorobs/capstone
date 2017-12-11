@@ -55,8 +55,8 @@
 
 
     <!-- INFORMATION-->
-  <div class="flex">
-    <div class="banner-media">
+  <div class="flex mobile-info">
+    <div class="banner-media" id="main-post">
       <img src="./resources/images/information-main.jpg">
       <h3> It doesn't hurt to keep practicing </h3>
       <p class="quote"> Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. Advantages prosperous remarkably </p>
@@ -65,8 +65,11 @@
 
     <div class="posts-col flex">
       <div class="post flex" href="./">
-        <div class="thumbnail">
+        <div class="thumbnail desktop-pic">
           <img src="./resources/images/information-orientation.jpg" alt="Information Orientation">
+        </div>
+        <div class="thumbnail mobile-pic">
+          <img src="./resources/images/information-orientation-mobile.jpg" alt="Information Orientation">
         </div>
         <div class="info">
           <span class="post-heading"> Orientation date </span>
@@ -75,8 +78,11 @@
         </div>
       </div>
       <div class="post flex" id="campus" href="#">
-        <div class="thumbnail">
+        <div class="thumbnail desktop-pic">
           <img src="./resources/images/information-campus.jpg" alt="Information Campus">
+        </div>
+        <div class="thumbnail mobile-pic">
+          <img src="./resources/images/information-campus-mobile.jpg" alt="Information Orientation">
         </div>
         <div class="info">
         <span class="post-heading"> Our campus </span>
@@ -85,8 +91,11 @@
       </div>
     </div>
       <div class="post flex" href="#">
-        <div class="thumbnail">
+        <div class="thumbnail desktop-pic">
           <img src="./resources/images/information-guest-lecture.jpg" alt="Information Guest">
+        </div>
+        <div class="thumbnail mobile-pic">
+          <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Information Orientation">
         </div>
         <div class="info">
           <span class="post-heading"> Our guest lecture </span>
@@ -158,6 +167,29 @@
           </div>
         </div>
     </div>
+
+
+    <div class="mobile-courses flex">
+      <div class="course-button">
+        <span class="post-heading"> Software engineering </span>
+      </div>
+      <div class="course-button">
+        <span class="post-heading"> Computer art </span>
+      </div>
+      <div class="course-button">
+        <span class="post-heading"> Design </span>
+      </div>
+      <div class="course-button">
+        <span class="post-heading"> Data </span>
+      </div>
+      <div class="course-button">
+        <span class="post-heading"> Business </span>
+      </div>
+      <div class="course-button">
+        <span class="post-heading"> Marketing </span>
+      </div>
+    </div>
+
   </div>
 
 
@@ -168,11 +200,13 @@
     <div class="banner-media">
       <video controls>
       <source src="./resources/videos/thesis.mp4" type="video/mp4">Your browser does not support this video.</video>
-      <span class="post-heading" id="exhibit-heading">Reimagine Urban </span>
-      <p class="quote"> Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. Advantages prosperous remarkably </p>
+      <div id="thesis-info">
+        <span class="post-heading" id="exhibit-heading">Reimagine Urban </span>
+        <p class="quote"> Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. Advantages prosperous remarkably </p>
+      </div>
     </div>
 
-    <div class="posts-col flex" >
+    <div class="posts-col flex" id="thesis-posts">
       <div class="post flex" href="#">
         <div class="thumbnail">
           <img src="./resources/images/thesis-fisma.jpg" alt="Fisma">

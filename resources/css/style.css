@@ -50,6 +50,7 @@ html {
 
 body {
   padding: 0;
+  margin: 0;
 }
 
 .container {
@@ -190,6 +191,9 @@ ul li:hover {
 
 
 /* INFORMATION */
+.mobile-pic {
+  display: none;
+}
 
 .banner-media h3 {
     padding: 2rem 0;
@@ -255,6 +259,10 @@ span.quote-name {
 }
 
 /* COURSES */
+
+.mobile-courses {
+  display: none;
+}
 
 .learning {
   padding: 2rem 3.5rem;
@@ -356,8 +364,12 @@ video {
 /* Mobile */
 
 @media only screen and (max-width: 480px) {
-    .desktop-nav, span.logo-text {
+    .desktop-nav, .desktop-pic, span.logo-text, .allcourses, #thesis-posts, #thesis-info, .termsandprivacy {
         display: none;
+    }
+
+    p {
+      font-size: 1.1rem;
     }
 
     .mobile-nav {
@@ -374,4 +386,108 @@ video {
     .container {
       padding: 0 1rem;
     }
+
+    .banner {
+      flex-direction: column;
+    }
+
+    .banner-media {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .hero {
+      width: 100%;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    .hero-text {
+    padding-bottom: 1.5rem;}
+
+    h2 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
+
+    .button {
+    margin-bottom: 2rem;
+    border-bottom: none;
+}
+
+  #main-post {
+    display: none;
+  }
+
+    .flex.mobile-info {
+      flex-direction: column;
+      margin: 1rem 1rem 2rem 1rem;
+    }
+
+    .posts-col {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .post {
+      flex-direction: column;
+      align-items: unset;
+      border: 20px solid #EEc4FF;
+    }
+
+    .mobile-pic {
+      width: 100%;
+      display: block;
+    }
+
+    .thumbnail {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+    .info {
+      max-width: 100%;
+      margin: 1.5rem 0 1rem 1.5rem;
+    }
+
+    #campus {
+      margin: 3rem 0;
+    }
+
+    .mobile-courses {
+      display:flex;
+      flex-direction: column;
+    }
+
+
+
+    .course-button {
+      background-color: white;
+      margin-bottom: 0.5rem;
+      padding: 1rem 1rem 1.5rem 1rem;
+      border-radius: 1rem;
+    }
+
+    .course-button:nth-child(2n+2) {
+      background-color: #fcffc1;
+
+
+
+    }
+      .learning {
+    padding: 2rem 1.5rem; }
+
+    a.post-link {
+      font-size: 1.2rem;
+    }
+
+    video {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .container.footer.flex {
+        padding: 1rem 1rem;
+      }
