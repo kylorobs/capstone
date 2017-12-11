@@ -35,6 +35,14 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+* {
+  -moz-box-sizing: border-box;
+     box-sizing: border-box;
+
+-webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+}
+
 html {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
@@ -60,6 +68,10 @@ img {
 
 .flex {
   display: flex;
+}
+
+p, li, .logo-text {
+  color: #565454;
 }
 
 h1, h2, h3, span.quote-name, .post-heading {
@@ -155,6 +167,7 @@ ul li:hover {
 .hero-text {
   padding-bottom: 2rem;
   font-size: 1.2rem;
+  color: #565454;
 }
 
 .button {
@@ -164,7 +177,13 @@ ul li:hover {
   text-align: center;
   text-decoration: none;
   border-radius: 2rem;
+  border-bottom: 3px solid #d264fd00;
 }
+
+.button:hover{
+  border-bottom: 3px solid #653179;
+}
+
 
 /* INFORMATION */
 
@@ -179,7 +198,6 @@ p.quote {
 
 span.quote-name {
   font-weight: 600;
-  font-size: 0.8rem;
   margin: 2rem 0;
   display: block;
 }
@@ -193,9 +211,15 @@ span.quote-name {
 .post {
     align-items: center;
     border-left: 2px solid #fcffc1;
-
 }
 
+.post.flex:hover {
+  background-color: #fcffc1;
+}
+
+#campus:hover {
+  background-color: #EEc4FF;
+}
 .thumbnail {
   max-width: 35%;
   height: auto;
@@ -206,6 +230,10 @@ span.quote-name {
 .thumbnail img {
   width: 100%;
   overflow: none;
+}
+
+.thumbnail img:hover {
+  width: 102%;
 }
 
 .info {
@@ -250,6 +278,7 @@ span.quote-name {
   margin: 1rem;
 }
 
+
 .course-media {
   max-width: 33.33%;
   overflow: hidden;
@@ -257,10 +286,16 @@ span.quote-name {
 
 
 .course img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   height: auto;
 }
+
+.course img:hover {
+  border-radius:2rem;
+
+}
+
 
 .top-course {
   margin-bottom: 2rem;
@@ -268,17 +303,14 @@ span.quote-name {
 
 .course-description {
   padding: 1rem 1rem 2rem 1rem;
-  height: 10rem;
+  height: 12rem;
 }
 
 .course-description:hover {
   background-color:#fcffc1;
 }
 
-.course-description p {
-  margin: 0;
-  padding: 0.5rem 0;
-}
+
 
 /* Exhibit */
 
