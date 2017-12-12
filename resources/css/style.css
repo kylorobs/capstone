@@ -120,7 +120,7 @@ display: flex;
 
 
 .logo-container {
-  width: 5%;
+  width: 4%;
 }
 
 .logo-container img {
@@ -413,6 +413,10 @@ video {
   span.post-heading {
     font-size: 1.3rem;
   }
+
+  .logo-container {
+    width: 8%;
+}
 
   .course-description {
     height: 12.5rem;
