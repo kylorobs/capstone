@@ -43,9 +43,10 @@
         transition: all 0.2s ease-in-out;
 }
 
-html {
+html, p {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
 }
 
 body {
@@ -173,6 +174,7 @@ ul li:hover {
   padding-bottom: 2rem;
   font-size: 1.2rem;
   color: #565454;
+  line-height: 1.3;
 }
 
 .button {
@@ -197,6 +199,7 @@ ul li:hover {
 
 .banner-media h3 {
     padding: 2rem 0;
+    text-align: left;
 }
 
 
@@ -247,6 +250,10 @@ span.quote-name {
 .info {
   align-items: center;
   max-width: 50%;
+}
+
+.info p {
+  padding: 0.5rem 0;
 }
 
 .post-heading {
@@ -310,6 +317,7 @@ span.quote-name {
 
 .top-course {
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .course-description {
@@ -320,6 +328,12 @@ span.quote-name {
 .course-description:hover {
   background-color:#fcffc1;
 }
+
+.course-description p {
+  padding-top: 0.5rem;
+  color: #828080;
+}
+
 
 
 /* Exhibit */
@@ -373,12 +387,24 @@ video {
   }
 
   .course-description {
-    height: 14.5rem;
+    height: 12.5rem;
   }
 
   .course {
     margin: 0.5rem;
   }
+
+  .post {
+    margin: 1rem 0;
+  }
+
+  .info {
+    max-width: 60%;
+  }
+
+  .thumbnail {
+    padding: 0.4rem;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -470,6 +496,10 @@ video {
       max-width: 100%;
       margin: 1.5rem 0 1rem 1.5rem;
     }
+
+    .info p {
+    padding: 0.5rem 0.5rem;
+  }
 
     #campus {
       margin: 3rem 0;
