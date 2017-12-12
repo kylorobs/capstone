@@ -279,7 +279,8 @@ span.quote-name {
 
 .post a {
   text-decoration: none;
-  color:#d264fd00;
+  color: #d264fd;
+  font-weight: bold;
 }
 
 /* COURSES */
